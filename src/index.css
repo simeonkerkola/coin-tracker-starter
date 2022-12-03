@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'LexendDeca';
+  src: url('/LexendDeca-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  font-family: LexendDeca, serif;
+
+  --light-gray: #474d61;
+  --gray: #343949;
+  --translucid-gray:#393f4f;
+  --purple: #8356c8;
+  --deep-purple: #683aad;
+  --dark-gray:#252833;
+  
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background:var(--gray);
+  color: #fff;
+}
