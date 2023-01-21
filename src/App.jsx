@@ -1,5 +1,5 @@
 function App() {
-  return (<div>Hello world</div>);
+  return (<div>Welcome to Web3</div>);
 }
 
 export default App;
