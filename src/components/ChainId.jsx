@@ -6,7 +6,9 @@ const { ethereum } = window;
 const ChainIdStyles = styled.div`
   border: none;
   box-shadow: ${(props) =>
-    props.chainId === '5' ? 'inset 3px 3px var(--gray)' : 'inset 3px 3px rgb(126 33 54)'};
+    props.chainId === '5'
+      ? 'inset 3px 3px var(--gray)'
+      : 'inset 3px 3px rgb(126 33 54)'};
 
   letter-spacing: 2px;
   color: white;
@@ -28,8 +30,9 @@ const ChainIdStyles = styled.div`
 export default function ChainId() {
   const [chainId, setChainId] = useState('');
 
-  if (!ethereum) console.error('No ethereum object found, please install MetaMask');
-  
+  if (!ethereum)
+    console.error('No ethereum object found, please install MetaMask');
+
   useEffect(() => {
     async function getChainId() {
       if (ethereum?.request) {
